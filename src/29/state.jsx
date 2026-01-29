@@ -15,11 +15,11 @@ export function State() {
   }
 
   // Varianta 2
-  const [value, setValue] = useState([]);
+  const [value, setValue] = useState(0);
 
   function handleClick() {
     // let currentValue =
-    setValue(value.count + 1);
+    setValue(value + 1);
   }
 
   console.log(value, "value");
