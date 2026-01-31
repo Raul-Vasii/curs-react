@@ -10,6 +10,10 @@ import { Input } from "./29/input"
 import { HtmlFor } from "./29/html-for";
 import { State } from "./29/state";
 
+import { ToggleButton } from "./29-tema/E1-butonDeToggle";
+import { LiveInput } from "./29-tema/E2-InputControlled";
+import { CounterCuLimita } from "./29-tema/E3-CounterCuLimită";
+
 function App() {
   // console.log(addTwo(1, 2), "rezultat adunare");
 
@@ -20,6 +24,9 @@ function App() {
     <Click />
     <Input />
     <State />
+    <ToggleButton />
+    <LiveInput />
+    <CounterCuLimita />
     </>
     // <>
     //   <input id="" className="" />
