@@ -10,6 +10,8 @@ export function Cursuri() {
   return (
     <div style={{ padding: "20px" }}>
       <h1>Cursurile Mele</h1>
+    {/* Tema 30 */}
+      {cursuri.length === 0 && <p>Nu exista cursuri disponibile.</p>} 
 
       <ul style={{ listStyle: "none", padding: 0 }}>
         {/* PASUL 2 & 3: Folosește .map() aici pentru a genera lista */}

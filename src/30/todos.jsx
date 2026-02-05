@@ -21,10 +21,19 @@ export function Todos() {
 
   useEffect(() => {
     console.log("buna ziua");
+    // Tema 30: Liniile 25-31 si 36
+    const saved = localStorage.getItem("todos");
+    if (saved) {
+      try {
+        setTodos(JSON.parse(saved));
+      } catch {
+      }
+    }
   }, []);
 
   useEffect(() => {
     console.log("todos a fost modificat", todos);
+    localStorage.setItem("todos", JSON.stringify(todos)); // Tema 30
   }, [todos]);
 
   function handleInputChange(event) {
