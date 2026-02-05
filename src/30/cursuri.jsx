@@ -10,7 +10,7 @@ export function Cursuri() {
   return (
     <div style={{ padding: "20px" }}>
       <h1>Cursurile Mele</h1>
-    {/* Tema 30 */}
+    {/* Tema 30 linia 14 */}
       {cursuri.length === 0 && <p>Nu exista cursuri disponibile.</p>} 
 
       <ul style={{ listStyle: "none", padding: 0 }}>

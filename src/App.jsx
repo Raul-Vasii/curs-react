@@ -16,6 +16,8 @@ import { CounterCuLimita } from "./29-tema/E3-CounterCuLimită";
 import { Todos } from "./30/todos";
 import { Cursuri } from "./30/cursuri";
 
+import { Tailwind } from "./31/tailwind";
+
 function App() {
   // console.log(addTwo(1, 2), "rezultat adunare");
 
@@ -23,8 +25,8 @@ function App() {
     // SESIUNEA 30
     <>
      <Todos />
+     <Tailwind />
      <Cursuri/>
-
     </>
 
     // SESIUNEA 29
