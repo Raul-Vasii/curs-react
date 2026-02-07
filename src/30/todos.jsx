@@ -1,5 +1,5 @@
 import "./todos.css";
-import axios from "axios";
+// import axios from "axios";
 import { useEffect, useState } from "react";
 import { TodoAdd } from "./todo-add.jsx";
 import { TodoList } from "./todo-list.jsx";
@@ -10,16 +10,16 @@ const array = ["De cumparat paine", "De facut temele", "De cumparat lapte"];
 // 1. NU modifica array-ul initial
 // 2. De fiecare data returneaza un array nou
 
-async function fetchTodos() {
-  try {
-    const response = await axios.get(
-      "https://jsonplaceholder.typicode.com/todos",
-    );
-    return response.data;
-  } catch {
-    console.log("eroare");
-  }
-}
+// async function fetchTodos() {
+//   try {
+//     const response = await axios.get(
+//       "https://jsonplaceholder.typicode.com/todos",
+//     );
+//     return response.data;
+//   } catch {
+//     console.log("eroare");
+//   }
+// }
 
 export function Todos() {
   // Pana la return, tinem tot JS-ul
@@ -33,20 +33,20 @@ export function Todos() {
 
   // console.log(todos, "modificat");
 
-  useEffect(() => {
-    // console.log("buna ziua");
-    // Tema 30: Liniile 25-31 si 36
-    const saved = localStorage.getItem("todos");
-    if (saved) {
-      try {
-        setTodos(JSON.parse(saved));
-      } catch {}
-    }
-  }, []);
+  // useEffect(() => {
+  //   // console.log("buna ziua");
+  //   // Tema 30: Liniile 25-31 si 36
+  //   const saved = localStorage.getItem("todos");
+  //   if (saved) {
+  //     try {
+  //       setTodos(JSON.parse(saved));
+  //     } catch {}
+  //   }
+  // }, []);
 
-useEffect(() => {
-  fetchTodos()
-}, []);
+// useEffect(() => {
+//   fetchTodos();
+// }, []);
 
 
   useEffect(() => {
