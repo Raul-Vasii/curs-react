@@ -1,0 +1,11 @@
+/* users.module.css */
+
+.todoTitle {
+  color: #111827;
+}
+
+.input {
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  padding: 8px 10px;
+}

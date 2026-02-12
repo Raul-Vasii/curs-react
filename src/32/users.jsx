@@ -1,12 +1,23 @@
 // import "./users.css"
-import styles from "./users.modules.css";
+import { useLocaleStorage } from "../33/use-local-storage";
+import styles from "./users.module.css";
 
 export function Users() {
-    console.log();
-    
+  const [inputValue, setInputValue] = useLocaleStorage("inputValue", "");
+
+  function onChange(event) {
+    setInputValue(event.target.value);
+  }
+
   return (
     <div className="todo-container">
       <h1 className={styles.todoTitle}>Componenta Users</h1>
+      <input
+        value={inputValue}
+        type="text"
+        className={styles.input}
+        onChange={onChange}
+      />
     </div>
   );
 }
