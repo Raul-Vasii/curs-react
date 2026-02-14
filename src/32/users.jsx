@@ -1,5 +1,5 @@
 // import "./users.css"
-import { useLocaleStorage } from "../33/use-local-storage";
+import { useLocaleStorage } from "../33/use-locale-storage";
 import styles from "./users.module.css";
 
 export function Users() {

@@ -1,6 +1,6 @@
 import { Link } from "react-router";
 import { usePosts } from "../33/use-posts";
-import { useToggle } from "../33/use.toggle";
+import { useToggle } from "../33/use-toggle";
 
 export function Posts() {
   const { posts, isLoading, error } = usePosts();

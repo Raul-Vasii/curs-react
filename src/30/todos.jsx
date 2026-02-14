@@ -1,8 +1,9 @@
 import "./todos.css";
 // import axios from "axios";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { TodoAdd } from "./todo-add.jsx";
 import { TodoList } from "./todo-list.jsx";
+import { useLocaleStorage } from "../33/use-locale-storage.js";
 // Sa nu ajungeti sa aveti un array, combinat din numere, obiecte si stringuri
 const array = ["De cumparat paine", "De facut temele", "De cumparat lapte"];
 
@@ -28,7 +29,7 @@ export function Todos() {
   const num = 123;
   const obj = { nume: "test" };
 
-  const [todos, setTodos] = useState([]);
+  const [todos, setTodos] = useLocaleStorage("todos", []);
   const [inputValue, setInputValue] = useState("");
 
   // console.log(todos, "modificat");
@@ -47,12 +48,6 @@ export function Todos() {
 // useEffect(() => {
 //   fetchTodos();
 // }, []);
-
-
-  useEffect(() => {
-    // console.log("todos a fost modificat", todos);
-    localStorage.setItem("todos", JSON.stringify(todos)); // Tema 30
-  }, [todos]);
 
   function handleInputChange(event) {
     setInputValue(event.target.value);

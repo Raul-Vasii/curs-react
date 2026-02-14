@@ -8,7 +8,7 @@ export function useToggle(initialValue) {
   const [value, setValue] = useState(initialValue);
 
   function toggleValue() {
-    setValue((prevValue) => !prevValue);
+    setValue(!value);
   }
 
   return [value, toggleValue];
