@@ -2,11 +2,11 @@ import "./App.css";
 
 import { Header } from "./28/header";
 
-import UserItemCard from "./28/user-item"
+import UserItemCard from "./28/user-item";
 
-import { Click } from "./29/click"
+import { Click } from "./29/click";
 
-import { Input } from "./29/input"
+import { Input } from "./29/input";
 import { HtmlFor } from "./29/html-for";
 import { State } from "./29/state";
 
@@ -26,14 +26,12 @@ function App() {
   return (
     // SESIUNEA 30
     <>
-    <VoteProvider>
-<SimpleVote />
-</VoteProvider>
-     <Todos />
-     <Tailwind />
-     <Cursuri/>
-
-
+      <Todos />
+      <Tailwind />
+      <VoteProvider>
+        <SimpleVote />
+      </VoteProvider>
+      <Cursuri />
     </>
 
     // SESIUNEA 29
