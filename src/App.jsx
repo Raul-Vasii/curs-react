@@ -19,42 +19,35 @@ import { VoteProvider } from "./34/vote-provider";
 import { SimpleVote } from "./34/simple-vote";
 
 import { Tailwind } from "./31/tailwind";
+import { BearCounter, Controls } from "./35/bear";
+import { LightToggle } from "./35/light-toggle";
+import { ThemeToggle } from "./35/theme-toggle";
+import { MagazinModern } from "./35/magazin-modern";
 
 function App() {
   // console.log(addTwo(1, 2), "rezultat adunare");
 
   return (
-    // SESIUNEA 30
     <>
-      <Todos />
+      {/* SESIUNEA 35 */}
+   <BearCounter />
+      <Controls />
+      <hr />
+      <LightToggle/>
+      <hr />
+      <ThemeToggle />
+      <hr />
+      <MagazinModern />
+
+
+      {/* SESIUNEA 30 + 31 + 34 */}
+      {/* <Todos />
       <Tailwind />
       <VoteProvider>
         <SimpleVote />
       </VoteProvider>
-      <Cursuri />
+      <Cursuri /> */}
     </>
-
-    // SESIUNEA 29
-    // <>
-    // <HtmlFor />
-    // <Click />
-    // <Input />
-    // <State />
-    // <ToggleButton />
-    // <LiveInput />
-    // <CounterCuLimita />
-    // </>
-    // <>
-    // SESIUNEA 28
-    //   <input id="" className="" />
-
-    //   <Header userName='Vasi' />
-    //   <Header userName='Radu' />
-    //   <Header userName='Alex' />
-
-    //   <UserItemCard name="Dol" email="test" comment="test" />
-    //   <UserItemCard name="Typ" email="test" comment="test" />
-    //   <UserItemCard name="Tel" email="test" comment="test" />    </>'
   );
 }
 
